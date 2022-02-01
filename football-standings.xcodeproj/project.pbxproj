@@ -84,7 +84,6 @@
 				AA2E0C16B9702BAD989CCB17 /* Pods-football-standings.debug.xcconfig */,
 				89EE0E8E90F832A1FF01D59B /* Pods-football-standings.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -119,7 +118,6 @@
 				6D7D82C127A7D3FB00CE5E88 /* View */,
 				6D7D82C027A7D3ED00CE5E88 /* ViewModels */,
 				6D7D82AD27A720D300CE5E88 /* Models */,
-				6D7D82A527A71DE300CE5E88 /* Info.plist */,
 			);
 			path = "football-standings";
 			sourceTree = "<group>";
@@ -212,6 +210,7 @@
 		6D7D82DA27A90DDE00CE5E88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6D7D82A527A71DE300CE5E88 /* Info.plist */,
 				6D7D82A027A71DE300CE5E88 /* Assets.xcassets */,
 			);
 			path = Resources;
