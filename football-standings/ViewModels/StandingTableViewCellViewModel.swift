@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct StandingTableViewCellViewModel {
     let standing: Standing
@@ -14,5 +15,17 @@ struct StandingTableViewCellViewModel {
         return standing.stats.first {
             $0.name == name
         }
+    }
+    
+    func GetLogoUrl() -> String? {
+        return standing.team.logos.first?.href
+    }
+    
+    func GetNoteColour() -> UIColor {
+        if let noteColor = standing.note?.color {
+            return UIColor(hexString: noteColor)
+        }
+        
+        return UIColor.secondarySystemBackground
     }
 }

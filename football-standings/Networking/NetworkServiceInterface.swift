@@ -29,7 +29,6 @@ final class NetworkService: NetworkServiceInterface {
         urlRequest.httpMethod = request.method.rawValue
         urlRequest.allHTTPHeaderFields = request.headers
         
-        
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
                 return completion(.failure(error))

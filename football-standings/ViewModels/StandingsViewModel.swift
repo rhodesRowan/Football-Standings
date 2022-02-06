@@ -7,7 +7,12 @@
 
 import Foundation
 
-protocol StandingsViewModelInterface {
+protocol BaseViewModel : AnyObject {
+    
+    var coordinator: Coordinator? { get }
+}
+
+protocol StandingsViewModelInterface : BaseViewModel {
     var standingViewModels: [StandingTableViewCellViewModel] { get set }
     var onFetchStandingsSucceed: (() -> Void)? { get set }
     var onFetchStandingsError: ((Error) -> Void)? { get set }
@@ -16,17 +21,22 @@ protocol StandingsViewModelInterface {
 
 final class StandingsViewModel : StandingsViewModelInterface {
     
+    let title = "Standings"
+    var coordinator: Coordinator?
+    var onFetchStandings: (() -> Void)?
     var onFetchStandingsSucceed: (() -> Void)?
     var onFetchStandingsError: ((Error) -> Void)?
     var standingViewModels: [StandingTableViewCellViewModel] = []
     
     private let networkService: NetworkService
     
-    init(networkService: NetworkService) {
+    init(networkService: NetworkService, coordinator: Coordinator) {
         self.networkService = networkService
+        self.coordinator = coordinator
     }
     
     func fetchStandings() {
+        self.onFetchStandings?()
         let request = FootballStandingsRequest()
         networkService.request(request) { [weak self] result in
             guard let self = self else {

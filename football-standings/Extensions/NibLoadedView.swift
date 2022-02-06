@@ -12,8 +12,7 @@ protocol NibLoadedView: AnyObject {
     static var nibName: String { get }
 }
 
-extension NibLoadedView where Self: UIView {
-    
+extension NibLoadedView  {
     static var nibName: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }

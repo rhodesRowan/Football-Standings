@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6D7D829827A71DDD00CE5E88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D829727A71DDD00CE5E88 /* AppDelegate.swift */; };
-		6D7D829A27A71DDD00CE5E88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D829927A71DDD00CE5E88 /* SceneDelegate.swift */; };
-		6D7D829C27A71DDD00CE5E88 /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D829B27A71DDD00CE5E88 /* StandingsViewController.swift */; };
-		6D7D829F27A71DDD00CE5E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D829D27A71DDD00CE5E88 /* Main.storyboard */; };
+		6D7D829C27A71DDD00CE5E88 /* StandingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D829B27A71DDD00CE5E88 /* StandingsListViewController.swift */; };
 		6D7D82A127A71DE300CE5E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D82A027A71DE300CE5E88 /* Assets.xcassets */; };
 		6D7D82A427A71DE300CE5E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D82A227A71DE300CE5E88 /* LaunchScreen.storyboard */; };
 		6D7D82AF27A7211500CE5E88 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82AE27A7211500CE5E88 /* League.swift */; };
@@ -31,6 +29,20 @@
 		6D7D82D327A905CA00CE5E88 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82D227A905CA00CE5E88 /* ReusableView.swift */; };
 		6D7D82D527A909A300CE5E88 /* NibLoadedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82D427A909A300CE5E88 /* NibLoadedView.swift */; };
 		6D7D82D727A90A5300CE5E88 /* UICollectionView+RegisterNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82D627A90A5300CE5E88 /* UICollectionView+RegisterNib.swift */; };
+		6D7D82DE27A921C500CE5E88 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82DD27A921C500CE5E88 /* BaseViewController.swift */; };
+		6D7D82E027A9220900CE5E88 /* UIViewController+LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82DF27A9220900CE5E88 /* UIViewController+LoadFromNib.swift */; };
+		6D7D82E327AA611C00CE5E88 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82E227AA611C00CE5E88 /* Coordinator.swift */; };
+		6D7D82E527AA619000CE5E88 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82E427AA619000CE5E88 /* AppCoordinator.swift */; };
+		6D7D82EB27AA729A00CE5E88 /* StandingsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D7D82E627AA687200CE5E88 /* StandingsListViewController.xib */; };
+		6D7D82ED27AC71AE00CE5E88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82EC27AC71AE00CE5E88 /* SceneDelegate.swift */; };
+		6D7D82EF27AC72DB00CE5E88 /* StandingsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82EE27AC72DB00CE5E88 /* StandingsListCoordinator.swift */; };
+		6D7D82F127AC7B4700CE5E88 /* UICollectionViewCell+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82F027AC7B4700CE5E88 /* UICollectionViewCell+Reusable.swift */; };
+		6D7D82F527ADC0FD00CE5E88 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82F427ADC0FD00CE5E88 /* BaseCollectionViewCell.swift */; };
+		6D7D82FA27AF0B9100CE5E88 /* CircularAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82F927AF0B9100CE5E88 /* CircularAvatar.swift */; };
+		6D7D82FC27AF0D2900CE5E88 /* StatStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82FB27AF0D2900CE5E88 /* StatStackView.swift */; };
+		6D7D82FF27AF176000CE5E88 /* ImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D82FE27AF176000CE5E88 /* ImageRequest.swift */; };
+		6D7D830127AF21F500CE5E88 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D830027AF21F500CE5E88 /* ImageClient.swift */; };
+		6D7D830327B05DD700CE5E88 /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7D830227B05DD700CE5E88 /* UIColor+hex.swift */; };
 		F85AEEA8CD840B6B0D5D1C29 /* Pods_football_standings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02AF13228070EAEA201A2E7F /* Pods_football_standings.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,12 +50,9 @@
 		02AF13228070EAEA201A2E7F /* Pods_football_standings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_football_standings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D829427A71DDD00CE5E88 /* football-standings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "football-standings.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D7D829727A71DDD00CE5E88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D7D829927A71DDD00CE5E88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D7D829B27A71DDD00CE5E88 /* StandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
-		6D7D829E27A71DDD00CE5E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D7D829B27A71DDD00CE5E88 /* StandingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsListViewController.swift; sourceTree = "<group>"; };
 		6D7D82A027A71DE300CE5E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D7D82A327A71DE300CE5E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6D7D82A527A71DE300CE5E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D7D82AE27A7211500CE5E88 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		6D7D82B027A7234600CE5E88 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		6D7D82B227A7237400CE5E88 /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
@@ -62,6 +71,20 @@
 		6D7D82D227A905CA00CE5E88 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		6D7D82D427A909A300CE5E88 /* NibLoadedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadedView.swift; sourceTree = "<group>"; };
 		6D7D82D627A90A5300CE5E88 /* UICollectionView+RegisterNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+RegisterNib.swift"; sourceTree = "<group>"; };
+		6D7D82DD27A921C500CE5E88 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		6D7D82DF27A9220900CE5E88 /* UIViewController+LoadFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadFromNib.swift"; sourceTree = "<group>"; };
+		6D7D82E227AA611C00CE5E88 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6D7D82E427AA619000CE5E88 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6D7D82E627AA687200CE5E88 /* StandingsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandingsListViewController.xib; sourceTree = "<group>"; };
+		6D7D82EC27AC71AE00CE5E88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D7D82EE27AC72DB00CE5E88 /* StandingsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsListCoordinator.swift; sourceTree = "<group>"; };
+		6D7D82F027AC7B4700CE5E88 /* UICollectionViewCell+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Reusable.swift"; sourceTree = "<group>"; };
+		6D7D82F427ADC0FD00CE5E88 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D7D82F927AF0B9100CE5E88 /* CircularAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularAvatar.swift; sourceTree = "<group>"; };
+		6D7D82FB27AF0D2900CE5E88 /* StatStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatStackView.swift; sourceTree = "<group>"; };
+		6D7D82FE27AF176000CE5E88 /* ImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRequest.swift; sourceTree = "<group>"; };
+		6D7D830027AF21F500CE5E88 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
+		6D7D830227B05DD700CE5E88 /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		89EE0E8E90F832A1FF01D59B /* Pods-football-standings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-football-standings.release.xcconfig"; path = "Target Support Files/Pods-football-standings/Pods-football-standings.release.xcconfig"; sourceTree = "<group>"; };
 		AA2E0C16B9702BAD989CCB17 /* Pods-football-standings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-football-standings.debug.xcconfig"; path = "Target Support Files/Pods-football-standings/Pods-football-standings.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,16 +131,17 @@
 		6D7D829627A71DDD00CE5E88 /* football-standings */ = {
 			isa = PBXGroup;
 			children = (
+				6D7D82D927A90DB200CE5E88 /* Application */,
+				6D7D82AD27A720D300CE5E88 /* Models */,
+				6D7D82C127A7D3FB00CE5E88 /* Views */,
+				6D7D82C027A7D3ED00CE5E88 /* ViewModels */,
+				6D7D82FD27AF13A400CE5E88 /* Presentation */,
+				6D7D82C327A842C800CE5E88 /* Networking */,
+				6D7D82E127AA5FD100CE5E88 /* Coordinator */,
 				6D7D82DB27A90DEC00CE5E88 /* Storyboards */,
 				6D7D82DA27A90DDE00CE5E88 /* Resources */,
-				6D7D82D927A90DB200CE5E88 /* Application */,
 				6D7D82D127A905B600CE5E88 /* Extensions */,
-				6D7D82C327A842C800CE5E88 /* Networking */,
 				6D7D82C227A7D56D00CE5E88 /* Helpers */,
-				6D7D82CC27A87B1B00CE5E88 /* Controllers */,
-				6D7D82C127A7D3FB00CE5E88 /* View */,
-				6D7D82C027A7D3ED00CE5E88 /* ViewModels */,
-				6D7D82AD27A720D300CE5E88 /* Models */,
 			);
 			path = "football-standings";
 			sourceTree = "<group>";
@@ -145,12 +169,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		6D7D82C127A7D3FB00CE5E88 /* View */ = {
+		6D7D82C127A7D3FB00CE5E88 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6D7D82D827A90D1F00CE5E88 /* StandingsCell */,
+				6D7D82F627ADC6A700CE5E88 /* Cells */,
+				6D7D82F927AF0B9100CE5E88 /* CircularAvatar.swift */,
+				6D7D82FB27AF0D2900CE5E88 /* StatStackView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6D7D82C227A7D56D00CE5E88 /* Helpers */ = {
@@ -163,20 +189,13 @@
 		6D7D82C327A842C800CE5E88 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				6D7D82DC27A9109B00CE5E88 /* Requests */,
 				6D7D82C427A85A7800CE5E88 /* DataRequest.swift */,
 				6D7D82C627A86EFF00CE5E88 /* NetworkServiceInterface.swift */,
 				6D7D82C827A86F6400CE5E88 /* ErrrorResponse.swift */,
-				6D7D82CA27A872F300CE5E88 /* FootballStandingsRequest.swift */,
+				6D7D830027AF21F500CE5E88 /* ImageClient.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		6D7D82CC27A87B1B00CE5E88 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				6D7D829B27A71DDD00CE5E88 /* StandingsViewController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 		6D7D82D127A905B600CE5E88 /* Extensions */ = {
@@ -185,6 +204,9 @@
 				6D7D82D227A905CA00CE5E88 /* ReusableView.swift */,
 				6D7D82D427A909A300CE5E88 /* NibLoadedView.swift */,
 				6D7D82D627A90A5300CE5E88 /* UICollectionView+RegisterNib.swift */,
+				6D7D82DF27A9220900CE5E88 /* UIViewController+LoadFromNib.swift */,
+				6D7D82F027AC7B4700CE5E88 /* UICollectionViewCell+Reusable.swift */,
+				6D7D830227B05DD700CE5E88 /* UIColor+hex.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,7 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				6D7D829727A71DDD00CE5E88 /* AppDelegate.swift */,
-				6D7D829927A71DDD00CE5E88 /* SceneDelegate.swift */,
+				6D7D82EC27AC71AE00CE5E88 /* SceneDelegate.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -210,7 +232,6 @@
 		6D7D82DA27A90DDE00CE5E88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6D7D82A527A71DE300CE5E88 /* Info.plist */,
 				6D7D82A027A71DE300CE5E88 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -219,10 +240,55 @@
 		6D7D82DB27A90DEC00CE5E88 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				6D7D829D27A71DDD00CE5E88 /* Main.storyboard */,
 				6D7D82A227A71DE300CE5E88 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6D7D82DC27A9109B00CE5E88 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D82CA27A872F300CE5E88 /* FootballStandingsRequest.swift */,
+				6D7D82FE27AF176000CE5E88 /* ImageRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		6D7D82E127AA5FD100CE5E88 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D82E227AA611C00CE5E88 /* Coordinator.swift */,
+				6D7D82E427AA619000CE5E88 /* AppCoordinator.swift */,
+				6D7D82EE27AC72DB00CE5E88 /* StandingsListCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6D7D82F327ADBC2800CE5E88 /* StandingsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D82E627AA687200CE5E88 /* StandingsListViewController.xib */,
+				6D7D829B27A71DDD00CE5E88 /* StandingsListViewController.swift */,
+			);
+			path = StandingsListViewController;
+			sourceTree = "<group>";
+		};
+		6D7D82F627ADC6A700CE5E88 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D82D827A90D1F00CE5E88 /* StandingsCell */,
+				6D7D82F427ADC0FD00CE5E88 /* BaseCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6D7D82FD27AF13A400CE5E88 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6D7D82F327ADBC2800CE5E88 /* StandingsListViewController */,
+				6D7D82DD27A921C500CE5E88 /* BaseViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		A363B1F4B65A0BD3FBF165DF /* Frameworks */ = {
@@ -292,10 +358,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7D82EB27AA729A00CE5E88 /* StandingsListViewController.xib in Resources */,
 				6D7D82A427A71DE300CE5E88 /* LaunchScreen.storyboard in Resources */,
 				6D7D82D027A87D2200CE5E88 /* StandingsCell.xib in Resources */,
 				6D7D82A127A71DE300CE5E88 /* Assets.xcassets in Resources */,
-				6D7D829F27A71DDD00CE5E88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,38 +399,42 @@
 			files = (
 				6D7D82D327A905CA00CE5E88 /* ReusableView.swift in Sources */,
 				6D7D82B727A7242E00CE5E88 /* Statistic.swift in Sources */,
-				6D7D829C27A71DDD00CE5E88 /* StandingsViewController.swift in Sources */,
+				6D7D829C27A71DDD00CE5E88 /* StandingsListViewController.swift in Sources */,
 				6D7D82AF27A7211500CE5E88 /* League.swift in Sources */,
 				6D7D82BB27A72A5400CE5E88 /* Logo.swift in Sources */,
+				6D7D82F127AC7B4700CE5E88 /* UICollectionViewCell+Reusable.swift in Sources */,
 				6D7D82B527A723F600CE5E88 /* Note.swift in Sources */,
 				6D7D82BD27A72AA400CE5E88 /* StandingsViewModel.swift in Sources */,
 				6D7D82D727A90A5300CE5E88 /* UICollectionView+RegisterNib.swift in Sources */,
 				6D7D82CE27A87BD700CE5E88 /* StandingsCell.swift in Sources */,
 				6D7D82C527A85A7800CE5E88 /* DataRequest.swift in Sources */,
+				6D7D82F527ADC0FD00CE5E88 /* BaseCollectionViewCell.swift in Sources */,
+				6D7D82FC27AF0D2900CE5E88 /* StatStackView.swift in Sources */,
+				6D7D82EF27AC72DB00CE5E88 /* StandingsListCoordinator.swift in Sources */,
 				6D7D829827A71DDD00CE5E88 /* AppDelegate.swift in Sources */,
 				6D7D82BF27A72B3200CE5E88 /* StandingTableViewCellViewModel.swift in Sources */,
+				6D7D82E527AA619000CE5E88 /* AppCoordinator.swift in Sources */,
 				6D7D82C927A86F6400CE5E88 /* ErrrorResponse.swift in Sources */,
 				6D7D82C727A86EFF00CE5E88 /* NetworkServiceInterface.swift in Sources */,
+				6D7D82FF27AF176000CE5E88 /* ImageRequest.swift in Sources */,
+				6D7D82E027A9220900CE5E88 /* UIViewController+LoadFromNib.swift in Sources */,
 				6D7D82B127A7234600CE5E88 /* ApiResponse.swift in Sources */,
 				6D7D82D527A909A300CE5E88 /* NibLoadedView.swift in Sources */,
+				6D7D82E327AA611C00CE5E88 /* Coordinator.swift in Sources */,
 				6D7D82CB27A872F300CE5E88 /* FootballStandingsRequest.swift in Sources */,
+				6D7D830327B05DD700CE5E88 /* UIColor+hex.swift in Sources */,
 				6D7D82B327A7237400CE5E88 /* Standing.swift in Sources */,
+				6D7D82DE27A921C500CE5E88 /* BaseViewController.swift in Sources */,
 				6D7D82B927A72A3A00CE5E88 /* Team.swift in Sources */,
-				6D7D829A27A71DDD00CE5E88 /* SceneDelegate.swift in Sources */,
+				6D7D82ED27AC71AE00CE5E88 /* SceneDelegate.swift in Sources */,
+				6D7D82FA27AF0B9100CE5E88 /* CircularAvatar.swift in Sources */,
+				6D7D830127AF21F500CE5E88 /* ImageClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6D7D829D27A71DDD00CE5E88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6D7D829E27A71DDD00CE5E88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6D7D82A227A71DE300CE5E88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -505,7 +575,6 @@
 				INFOPLIST_FILE = "football-standings/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -534,7 +603,6 @@
 				INFOPLIST_FILE = "football-standings/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
